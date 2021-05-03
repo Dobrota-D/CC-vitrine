@@ -1,0 +1,11 @@
+.item-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.item-image {
+    height: 200px;
+    width: 200px;
+}
+
