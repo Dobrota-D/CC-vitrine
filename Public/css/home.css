@@ -32,11 +32,10 @@
     width: 4%;
 }
 
-.video{
-    
-}
-
 .c-video{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
     
 }
 
