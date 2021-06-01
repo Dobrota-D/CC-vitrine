@@ -1,28 +1,51 @@
 * {
     margin: 0%;
+    
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
-
 .navbar{
-    position: absolute;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 1920px;
     height: 106px;
     left: 0px;
     top: 0px;
     background: #233356;
+    -webkit-user-select: none;
 }
 
 .logo{
     width: 200px;
-    margin-left: 2rem;
+    margin-right: 25%;
+}
+
+.navbtn{
+    width: 7%;
+}
+
+.navbtn2{
+    width: 4%;
 }
 
 .video{
+    
+}
 
+.c-video{
+    
 }
 
 .mosaic{
-
+    width: 1920px;
+    height: 106px;
+    left: 0px;
+    top: 0px;
+    background: #233356;
 }
 
 .presentation{
