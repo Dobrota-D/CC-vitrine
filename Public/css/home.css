@@ -40,11 +40,19 @@
 }
 
 .mosaic{
-    width: 1920px;
-    height: 106px;
-    left: 0px;
-    top: 0px;
-    background: #233356;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../Assets/test.jpg");
+}
+
+.mosaic img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 200px;
+    width: 200px;
+    margin-right: 5%;
+    box-shadow: 10px 10px 5px ;
 }
 
 .presentation{
@@ -52,7 +60,19 @@
 }
 
 .mosaic2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../Assets/test.jpg");
+}
 
+.mosaic2 img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 200px;
+    width: 200px;
+    margin-right: 5%;
+    box-shadow: 10px 10px 5px;
 }
 
 .menu{
