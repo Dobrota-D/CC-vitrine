@@ -1,7 +1,11 @@
 * {
     margin: 0%;
-    
 }
+
+body{
+    width: 100%;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -43,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background-image: url("../Assets/test.jpg");
+    background-image: url("../Assets/mosaic.jpg");
 }
 
 .mosaic img{
@@ -56,14 +60,15 @@
 }
 
 .presentation{
-
+    width: 1920px;
+    height: 106px;
 }
 
 .mosaic2{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-image: url("../Assets/test.jpg");
+    background-image: url("../Assets/mosaic.jpg");
 }
 
 .mosaic2 img{
@@ -80,8 +85,20 @@
 }
 
 .findUs{
-
+    background-color: #A13340;
+    background-image: url(../Assets/background_ou_trouver.jpg);
+    background-repeat: no-repeat;
 }
+
+.map{
+    margin-left: 15%;
+}
+
+.backgroundmap{
+    
+}
+
+
 
 .SocialNet{
 
