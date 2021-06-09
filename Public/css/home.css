@@ -21,6 +21,7 @@ body{
     top: 0px;
     background: #233356;
     -webkit-user-select: none;
+    z-index: 3;
 }
 
 .logo{
@@ -108,76 +109,263 @@ body{
 
 }
 
-main{
-    width: 100%;
-    height: 400px;
-    margin: auto;
+/**
+CAROUSEL
+*/
+
+.imgCarousel{
+    width: 200px;
+    z-index:1;
+    display: block;
+}
+    @media only screen and (max-device-width:1024px) and (min-device-width:481px){
+        .imgCarousel{
+            width: 150px;
+            z-index: 1;
+            display: block;
+        }
+        }
+        @media only screen and (max-device-width:480px) and (min-device-width:0px){
+            .imgCarousel{
+                width: 150px;
+                z-index: 1;
+                display: block;
+            }
+            }
+            @media only screen and (max-device-width:770px) and (min-device-width:750px){
+                .imgCarousel{
+                    width: 100px;
+                    z-index: 1;
+                    display: block;
+                }
+                }
+                @media only screen and (max-device-width:640px) and (min-device-width:540px){
+                    .imgCarousel{
+                        width: 250px;
+                        z-index: 1;
+                        display: block;
+                    }
+                    }
+
+.item{
+    margin-left: 25%;
+}
+
+.carousel_title{
+    width: 250px;
+}
+.container{
+    margin: 5%;
+}
+.carousel,.carousel2{
+    position: relative;
     overflow: hidden;
-    position: relative;
+}
+.carousel_item{
+    float: left;
 }
 
-.ButtonNext{
+.carousel_container{
+    transition: transform 0.3s;
+    transform: translate3d(0,0,0);
+}
+.carousel_container::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.carousel_next, .carousel_prev{
     position: absolute;
-    top: 40%;
-    font-size: 115px;
-    font-weight: bold;
-    cursor: pointer;
-    left: 0.5%;
-    z-index: 1;
-}
+    top: 100%;
+    width: 25%;
+    height: 25%;
+    background: url(../../Picture/right_arrow.svg)  center no-repeat;
+    background-size: 60px 60px;
+    margin-top: -10%;
+    right: -100px;
+    cursor: pointer; 
+    transition: transform 0.3s opacity 0.3s;
+} 
+    @media only screen and (max-device-width:1024px) and (min-device-width:641px){
+        .carousel_next, .carousel_prev{
+            position: absolute;
+            top: 100%;
+            width: 25%;
+            height: 35%;
+            background: url(../../Picture/right_arrow.svg)  center no-repeat;
+            background-size: 60px 60px;
+            margin-top: -12%;
+            right: -90px;
+            cursor: pointer; 
+            transition: transform 0.3s opacity 0.3s;
+        }
+        }
+        @media only screen and (max-device-width:480px) and (min-device-width:0px){
+            .carousel_next, .carousel_prev{
+                position: absolute;
+                top: 100%;
+                width: 25%;
+                height: 35%;
+                background: url(../../Picture/right_arrow.svg)  center no-repeat;
+                background-size: 60px 60px;
+                margin-top: -100px;
+                right: -10px;
+                cursor: pointer; 
+                transition: transform 0.3s opacity 0.3s;
+            }
+            }
+            @media only screen and (max-device-width:770px) and (min-device-width:750px){
+                .carousel_next, .carousel_prev{
+                    position: absolute;
+                    top: 100%;
+                    width: 25%;
+                    height: 50%;
+                    background: url(../../Picture/right_arrow.svg)  center no-repeat;
+                    background-size: 60px 60px;
+                    margin-top: -13%;
+                    right: -50px;
+                    cursor: pointer; 
+                    transition: transform 0.3s opacity 0.3s;
+                }
+                }
+                @media only screen and (max-device-width:640px) and (min-device-width:540px){
+                    .carousel_next, .carousel_prev{
+                        position: absolute;
+                        top: 100%;
+                        width: 25%;
+                        height: 50%;
+                        background: url(../../Picture/right_arrow.svg)  center no-repeat;
+                        background-size: 60px 60px;
+                        margin-top: -35%;
+                        right: 0px;
+                        cursor: pointer; 
+                        transition: transform 0.3s opacity 0.3s;
+                    }
+                    }
 
-.ButtonPrevious{
-    position: absolute;
-    top: 40%;
-    font-size: 115px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1;
-    text-align: right;
-    right: 0.5%;
-}
 
-section{
+.carousel_prev{
+    background-image: url(../../Picture/left_arrow.svg);
+    right: auto;
+    left: -120px;
+}
+    @media only screen and (max-device-width:1024px) and (min-device-width:481px){
+        .carousel_prev{
+            background-image: url(../../Picture/left_arrow.svg);
+            right: auto;
+            left: -90px;
+        }
+        }
+        @media only screen and (max-device-width:480px) and (min-device-width:0px){
+            .carousel_prev{
+                background-image: url(../../Picture/left_arrow.svg);
+                right: auto;
+                left: -9px;
+            }
+            }
+            @media only screen and (max-device-width:770px) and (min-device-width:750px){
+                .carousel_prev{
+                    background-image: url(../../Picture/left_arrow.svg);
+                    right: auto;
+                    left: -65px;
+                }
+                }
+                @media only screen and (max-device-width:640px) and (min-device-width:540px){
+                    .carousel_prev{
+                        background-image: url(../../Picture/left_arrow.svg);
+                        right: auto;
+                        left: -0px;
+                    }
+                    }
+
+.item_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
     display: flex;
-    justify-content: left;
+    align-items: center;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    z-index:2;
+    margin-top: -20%;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
+@media only screen and (max-device-width:770px) and (min-device-width:750px){
+    .item_title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12.5px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.035em;
+        color: #FFFFFF;
+        z-index:2;
+        margin-top: -20%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        }
+    }
+    @media only screen and (max-device-width:480px) and (min-device-width:0px){
+        .item_title{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16.5px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.035em;
+            color: #FFFFFF;
+            z-index:2;
+            margin-top: -20%;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            }
+        }
+        @media only screen and (max-device-width:1024px) and (min-device-width:641px){
+            .item_title{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18.5px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.035em;
+                color: #FFFFFF;
+                z-index:2;
+                margin-top: -20%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                }
+            }
 
-.elementCarousel{
-    min-width: 320px;
-    height: 200px;
-    position: relative;
-    left: 0;
-    text-align: center;
-    padding-top: 30px;
-    margin: 10px 20px;
-    transition: 2.5s;
+.item_desc{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.5px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
-
-.Title{
-    margin-left: 3%;
-}
-
-.CantineVgéTitle {
-    height: 6px;
-    width: 250px;
-    background-color: #40591C;
-    
-}
-.StreetfoodTitle {
-    height: 6px;
-    width: 250px;
-    background-color: #A13340;
-    
-}
-.DessertTitle {
-    height: 6px;
-    width: 250px;
-    background-color: #F3A424;
-    
-}
-.BoissonTitle {
-    height: 6px;
-    width: 250px;
-    background-color: #3E5FA6;
-    
+@media only screen and (max-device-width:770px) and (min-device-width:750px){
+    .item_desc{
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.5em;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.035em;
+        color: #FFFFFF;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
 }
