@@ -249,9 +249,7 @@ main{
     margin-left: 25%;
 }
 
-.carousel_title{
-    width: 250px;
-}
+
 .container{
     margin: 5%;
 }
@@ -467,3 +465,47 @@ main{
         margin-bottom: 2%;
     }
 }
+
+.CantineVgéUnderline{
+    height: 6px;
+    width: 245px;
+    background-color:#40591C;
+}
+
+.StreetFoodUnderline{
+    height: 6px;
+    width: 235px;
+    background-color:#A13340;
+}
+
+.DessertUnderline{
+    height: 6px;
+    width: 152px;
+    background-color:#F3A424;
+}
+.BoissonsUnderline{
+    height: 6px;
+    width: 155px;
+    background-color:#3E5FA6;
+}
+
+/** 
+RESEAUX
+**/ 
+
+#CssFB {
+    width: 500px;
+    margin-top: 4%;
+}
+
+#conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#eapps-instagram-feed-1 {
+    margin-top: 4%;
+}
+
