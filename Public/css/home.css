@@ -160,9 +160,6 @@ body{
 .mosaic2 img:hover{
     opacity: 0.9;
 }
-.menu{
-
-}
 
 .findUs{
     background-color: #A13340;
@@ -180,9 +177,6 @@ body{
 
 
 
-.SocialNet{
-
-}
 
 .footer{
     display: flex;
@@ -521,3 +515,7 @@ RESEAUX
     margin-top: 4%;
 }
 
+.SocialNet{
+    background-image: url(../Assets/backgroundsocial.jpg);
+    background-size: 100%;
+}
