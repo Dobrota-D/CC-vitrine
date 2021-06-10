@@ -489,6 +489,18 @@ main{
     background-color:#3E5FA6;
 }
 
+.carousel_title{
+    display: flex;
+    align-items: flex-start;
+}
+
+.carousel_title_desc{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    margin-left: 10%;
+}
+
 /** 
 RESEAUX
 **/ 
