@@ -161,10 +161,6 @@ body {
 .mosaic2 img:hover{
     opacity: 0.9;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 
 .findUs {
     display: flex;
@@ -198,17 +194,11 @@ body {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .SocialNet {
 
 }
 /* Footer and icon css */
 .footer {
-=======
-
-
-.footer{
->>>>>>> main
     display: flex;
     align-items: center;
     justify-content: space-around;
