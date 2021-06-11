@@ -1,8 +1,10 @@
 * {
     margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-body{
+body {
     width: 100%;
 }
 
@@ -10,13 +12,12 @@ body{
     display: none;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1920px;
-    height: 106px;
+    height: 13%;
     left: 0px;
     top: 0px;
     background: #233356;
@@ -24,27 +25,27 @@ body{
     z-index: 3;
 }
 
-.logo{
+.logo {
     width: 200px;
     margin-right: 25%;
 }
 
-.navbtn{
+.navbtn {
     width: 7%;
 }
 
-.navbtn2{
+.navbtn2 {
     width: 4%;
 }
 
-.c-video{
+.c-video {
     display: flex;
     width: 100%;
     max-width: 100%;
-    
+
 }
 
-.mosaic{
+.mosaic {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -52,7 +53,7 @@ body{
     background-size: cover;
 }
 
-.mosaic img{
+.mosaic img {
     margin-top: 2%;
     margin-bottom: 2%;
     height: 200px;
@@ -138,7 +139,7 @@ body{
     height: 106px;
 }
 
-.mosaic2{
+.mosaic2 {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -146,7 +147,7 @@ body{
     background-size: cover;
 }
 
-.mosaic2 img{
+.mosaic2 img {
     margin-top: 2%;
     margin-bottom: 2%;
     height: 200px;
@@ -160,31 +161,45 @@ body{
 .mosaic2 img:hover{
     opacity: 0.9;
 }
-.menu{
 
+
+.findUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A13340;
+    height: 60vh;
+    width: 100%;
 }
 
-.findUs{
-    background-color: #A13340;
+
+.backgroundmap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-image: url(../Assets/background_ou_trouver.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    background-position: center;
 }
 
-.map{
-    margin-left: 15%;
+.finduscontent{
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    width: 40%;
+    font-size: 120%;
+    text-align: center;
 }
 
-.backgroundmap{
-    
-}
-
-
-
-.SocialNet{
+.SocialNet {
 
 }
-
-.footer{
+/* Footer and icon css */
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -193,9 +208,22 @@ body{
     -webkit-user-select: none;
 }
 
-.logofooter{
+.logofooter {
     width: 200px;
     margin-right: 1%;
+}
+
+.mailicon{
+    width: 4%;
+    border-radius: 16%;
+}
+
+.fbicon{
+    width: 3%;
+}
+
+.infofooter{
+    color: #f1f1f1;
 }
 
 /**
@@ -249,9 +277,7 @@ main{
     margin-left: 25%;
 }
 
-.carousel_title{
-    width: 250px;
-}
+
 .container{
     margin: 5%;
 }
@@ -466,4 +492,64 @@ main{
         margin-left: 2%;
         margin-bottom: 2%;
     }
+}
+
+.CantineVgéUnderline{
+    height: 6px;
+    width: 245px;
+    background-color:#40591C;
+}
+
+.StreetFoodUnderline{
+    height: 6px;
+    width: 235px;
+    background-color:#A13340;
+}
+
+.DessertUnderline{
+    height: 6px;
+    width: 152px;
+    background-color:#F3A424;
+}
+.BoissonsUnderline{
+    height: 6px;
+    width: 155px;
+    background-color:#3E5FA6;
+}
+
+.carousel_title{
+    display: flex;
+    align-items: flex-start;
+}
+
+.carousel_title_desc{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    margin-left: 10%;
+}
+
+/** 
+RESEAUX
+**/ 
+
+#CssFB {
+    width: 500px;
+    margin-top: 4%;
+}
+
+#conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#eapps-instagram-feed-1 {
+    margin-top: 4%;
+}
+
+.SocialNet{
+    background-image: url(../Assets/backgroundsocial.jpg);
+    background-size: 100%;
 }
