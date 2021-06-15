@@ -135,8 +135,51 @@ body {
 
 
 .presentation{
-    width: 1920px;
-    height: 106px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.pres-gauche{
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+}
+
+.pres-gauche img{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.pres-gauche p{
+    width: 100%;
+    font-size: 18px;
+    padding-top: 5%;
+}
+
+.pres-milieu{
+    width: 1%;
+    background-color: orange;
+}
+
+.pres-droite{
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+}
+
+.pres-droite img{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.pres-droite p{
+    width: 100%;
+    font-size: 18px;
+    padding-top: 5%;
 }
 
 .mosaic2 {
