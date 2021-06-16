@@ -12,35 +12,45 @@ body {
     display: none;
 }
 
+
 .navbar {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 13%;
-    left: 0px;
-    top: 0px;
+    width: 100%;
     background: #233356;
     -webkit-user-select: none;
     z-index: 3;
 }
 
 .logo {
-    width: 200px;
+    width: 10%;
     margin-right: 25%;
 }
 
 .navbtn {
-    width: 7%;
+    width: 7vw;
 }
 
 .navbtn2 {
     width: 4%;
 }
 
+.navbtn3 {
+    width: 5%;
+}
+
+.c-video video{
+    width: 100%;
+    height: auto;
+}
+
 .c-video {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
 
 }
@@ -134,10 +144,6 @@ body {
 }
 
 
-.presentation{
-    width: 1920px;
-    height: 106px;
-}
 
 .mosaic2 {
     display: flex;
@@ -194,9 +200,7 @@ body {
     text-align: center;
 }
 
-.SocialNet {
 
-}
 /* Footer and icon css */
 .footer {
     display: flex;
@@ -212,8 +216,8 @@ body {
     margin-right: 1%;
 }
 
-.mailicon{
-    width: 4%;
+.mailicon img{
+    width: 8vh;
     border-radius: 16%;
 }
 
@@ -225,9 +229,7 @@ body {
     color: #f1f1f1;
 }
 
-/**
-CAROUSEL
-*/
+/**CAROUSEL*/
 
 
 main{
@@ -528,9 +530,7 @@ main{
     margin-left: 10%;
 }
 
-/** 
-RESEAUX
-**/ 
+/**RESEAUX**/ 
 
 #CssFB {
     width: 500px;
