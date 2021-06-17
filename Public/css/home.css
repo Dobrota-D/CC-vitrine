@@ -25,21 +25,25 @@ body {
     z-index: 3;
 }
 
-.logo {
-    width: 10%;
+.logo  img{
+    width: 10vw;
     margin-right: 25%;
 }
 
-.navbtn {
+.navbtn img{
+    width: 8vw;
+}
+
+.navbtn1 img{
     width: 7vw;
 }
 
-.navbtn2 {
-    width: 4%;
+.navbtn2 img{
+    width: 4vw;
 }
 
-.navbtn3 {
-    width: 5%;
+.navbtn3 img{
+    width: 5vw;
 }
 
 .c-video video{
@@ -253,7 +257,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     background: #233356;
     -webkit-user-select: none;
 }
@@ -268,8 +272,16 @@ body {
     border-radius: 16%;
 }
 
-.fbicon{
-    width: 3%;
+.fbicon img{
+    width: 7vh;
+}
+
+.instaicon img{
+    width: 8vh;
+}
+
+.tel{
+    width: 40vh;
 }
 
 .infofooter{

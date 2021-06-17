@@ -11,19 +11,20 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta name="description" content="">
 </head>
 
 <body>
 
 <!---->
     <div class="navbar">
-       <img draggable="false" class="logo" src="../Assets/logoNavBar.png" alt="Cantine Club"> 
-       <img draggable="false" class="navbtn" src="../Assets/présentation.png" alt="Présentation"> 
-       <img draggable="false" class="navbtn3" src="../Assets/cuisine.png" alt="Cuisine"> 
-       <img draggable="false" class="navbtn2" src="../Assets/carte.png" alt="Carte"> 
-       <img draggable="false" class="navbtn" src="../Assets/ou_nous_trouver.png" alt="Ou nous trouver"> 
-       <img draggable="false" class="navbtn2" src="../Assets/réseaux.png" alt="Réseaux"> 
-       <img draggable="false" class="navbtn" src="../Assets/click_and_collect.png" alt="Click and collect">
+      <a class="logo" href="#"> <img draggable="false" src="../Assets/logoNavBar.png" alt="Cantine Club"> </a>
+      <a class="navbtn1" href="#pre"><img draggable="false"  src="../Assets/présentation.png" alt="Présentation"></a>
+      <a class="navbtn3" href="#cui"><img draggable="false" class="navbtn3" src="../Assets/cuisine.png" alt="Cuisine"></a>
+      <a class="navbtn2" href=""><img draggable="false" class="navbtn2" src="../Assets/carte.png" alt="Carte"></a>
+      <a class="navbtn" href="#find"><img draggable="false" class="navbtn" src="../Assets/ou_nous_trouver.png" alt="Ou nous trouver"></a>
+      <a class="navbtn2" href="#res"><img draggable="false" class="navbtn2" src="../Assets/réseaux.png" alt="Réseaux"></a>
+      <a class="navbtn" href="#"><img draggable="false" class="navbtn" src="../Assets/click_and_collect.png" alt="Click and collect"></a>
     </div>
 <!---->
 
@@ -32,11 +33,11 @@
     </div>
 <!---->
 
-    <div class="mosaic">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic1.JPG">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic2.jpg">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic3.JPG">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic4.jpg">
+    <div class="mosaic" id="pre">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic1.JPG">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic2.jpg">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic3.JPG">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic4.jpg">
     </div>
 
 <!---->
@@ -54,11 +55,11 @@
       </div>
     </div>
 <!---->
-    <div class="mosaic2">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic5.jpg">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic6.JPG">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic7.JPG">
-        <img class="mosaicImg" alt="image01" src="../Assets/mosaicPics/cantineclubPic8.jpg">
+    <div class="mosaic2" id="cui">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic5.jpg">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic6.JPG">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic7.JPG">
+        <img class="mosaicImg" src="../Assets/mosaicPics/cantineclubPic8.jpg">
     </div>
 
     <div id="myModal" class="modal">
@@ -577,7 +578,8 @@
               <div class="item_image">
                 <img src="../Assets/test.jpg" class="imgCarousel">
               </div>
-              <div class="item_body">
+              <!---->
+              <div class="item_body" id="find">
                   <div class="item_title">
                     Produit 8
                   </div>
@@ -594,12 +596,9 @@
         </div>
       </div>
   
-
-    <div class="mosaic3">
-
-    </div>
 <!---->
-    <div class="findUs">
+    
+    <div class="findUs" >
         <div class="backgroundmap">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.0374202674066!2d2.2553464158613834!3d48.9146793046955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66562c2cf61b3%3A0x1231560330b6bd42!2sCANTINE%20CLUB%20Les%20Vall%C3%A9es!5e0!3m2!1sfr!2sfr!4v1622627746636!5m2!1sfr!2sfr"
@@ -623,7 +622,7 @@
         </div>
     </div>
     <!---->
-    <div class="SocialNet">
+    <div class="SocialNet" id="res">
         <div id="conteneur">
             <!--intégration de la Page Instagram-->
             <div class="elfsight-app-4d818b7f-8b02-4e50-8452-38186550a497">
@@ -644,10 +643,10 @@
 <!---->
     <div class="footer">
         <a class="mailicon" href="mailto:cantineclublesvallees@gmail.com"><img draggable="false" src="../Assets/mail.png" alt="eMail contact"></a>
-        <img draggable="false" class="fbicon" src="../Assets/facebook.png" alt="Facebook icon">
-        <img draggable="false" class="" src="../Assets/insta.png" alt="instagram icon">
-        <img draggable="false" class="" src="../Assets/tel.png" alt="phone number">
-        <p class="infofooter">Information: <u>Mention légales</u></p>
+        <a class="fbicon" href="https://www.facebook.com/Cantine-Club-Les-Vall%C3%A9es-107331021060795"><img draggable="false" src="../Assets/facebook.png" alt="Facebook icon"></a> 
+        <a class="instaicon" href="https://www.instagram.com/cantineclublesvallees/?hl=fr"><img draggable="false" src="../Assets/insta.png" alt="instagram icon"></a>
+        <img draggable="false" class="tel" src="../Assets/tel.png" alt="phone number">
+        <p class="infofooter">Information:<a href="#"><u>Mention légales</u></a></p>
         <img draggable="false" class="logofooter" src="../Assets/logoNavBar.png" alt="Cantine Club logo">
     </div>
     
