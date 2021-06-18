@@ -15,7 +15,7 @@ class Carousel{
             loop: false
         }, options)
         let children = [].slice.call(element.children) 
-        this.isMobile = true
+        this.isMobile = false
         this.currentItem = 0
         this.root = this.createDivWithClass('carousel')
         this.container = this.createDivWithClass('carousel_container')
@@ -98,7 +98,7 @@ class Carousel{
         return this.isMobile ? 1 : this.options.slideVisible
     }
     onWindowResize(){
-        let mobile = window.innerWidth < 760
+        let mobile = window.innerWidth < 1150
         if(mobile !== this.isMobile){
             this.isMobile = mobile
             this.setStyle()
