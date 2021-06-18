@@ -12,7 +12,7 @@ body {
     display: none;
 }
 
-
+/* navbar with pictures */
 .navbar {
     position: fixed;
     display: flex;
@@ -29,22 +29,28 @@ body {
     width: 10vw;
     margin-right: 25%;
 }
+/* there is differnet size cause the font is special */
 
 .navbtn img{
     width: 8vw;
 }
+/* there is differnet size cause the font is special */
 
 .navbtn1 img{
     width: 7vw;
 }
+/* there is differnet size cause the font is special */
 
 .navbtn2 img{
     width: 4vw;
 }
+/* there is differnet size cause the font is special */
 
 .navbtn3 img{
     width: 5vw;
 }
+
+/* video/GIF container */
 
 .c-video video{
     width: 100%;
@@ -218,6 +224,8 @@ body {
 .mosaic2 img:hover{
     opacity: 0.9;
 }
+
+/* Find us background and text */
 
 .findUs {
     display: flex;
