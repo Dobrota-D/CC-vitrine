@@ -18,8 +18,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 13%;
-    width: 100%;
+    height: 6vw;
+    width: 100vw;
     background: #233356;
     -webkit-user-select: none;
     z-index: 3;
@@ -661,7 +661,6 @@ Title and description for the different carousel
     font-size: 18px;
     font-weight: bold;
     font-family: 'Roboto';
-    margin-left: 10%;
     width: 100%;
 }
 
